@@ -68,7 +68,39 @@ Skills are specialized knowledge modules that Claude automatically uses when you
 
 ### Code Generation Skills
 
-#### 4. fhir-handler-generator ⭐ NEW
+#### 4. fhir-project-setup ⭐ NEW
+
+**Triggers:** Questions about creating new projects, setting up FHIR APIs, project scaffolding
+
+**What it generates:**
+- New FHIR Engine Web API projects with custom configuration
+- Dotnet solution files and project structure
+- Git repository initialization
+- Optional .NET Aspire orchestration setup
+
+**Example questions:**
+- "Create a new FHIR project with PostgreSQL data store"
+- "Setup a FHIR Web API with R4B version and enable logging to SQS"
+- "I want to create a FHIR R5 project for testing"
+- "Initialize a new FHIR Engine project with custom data store"
+
+**Configuration options:**
+- Database store (PostgreSQL, SQL Server, Cosmos DB, Custom, etc.)
+- FHIR version (R4, R4B, R5)
+- .NET Aspire integration (9.5.2, 9.3.1, or disabled)
+- Documentation templates
+- IDE integration (VS Code auto-open)
+
+**Outputs:**
+- Complete project structure with .csproj files
+- Solution file with all projects added
+- Git repository with initial commit
+- appsettings.json and fhirengine.json templates
+- Ready-to-build FHIR API
+
+---
+
+#### 5. fhir-handler-generator ⭐ NEW
 
 **Triggers:** Questions about creating handlers, implementing FHIR interactions, custom operations
 
@@ -93,7 +125,7 @@ Skills are specialized knowledge modules that Claude automatically uses when you
 
 ---
 
-#### 5. fhir-custom-resource ⭐ NEW
+#### 6. fhir-custom-resource ⭐ NEW
 
 **Triggers:** Questions about custom resources, new resource types, domain-specific models
 
@@ -119,7 +151,7 @@ Skills are specialized knowledge modules that Claude automatically uses when you
 
 ---
 
-#### 6. fhir-custom-datastore
+#### 7. fhir-custom-datastore
 
 **Triggers:** Questions about custom data stores, relational models, database mapping
 
@@ -144,7 +176,7 @@ Skills are specialized knowledge modules that Claude automatically uses when you
 
 ---
 
-#### 7. fhir-structuredefinition
+#### 8. fhir-structuredefinition
 
 **Triggers:** Questions about StructureDefinitions, profiles, extensions, constraints
 
@@ -172,7 +204,7 @@ Skills are specialized knowledge modules that Claude automatically uses when you
 
 ### Analysis & Mapping Tasks
 
-#### 8. fhir-data-mapping
+#### 9. fhir-data-mapping
 
 **Triggers:** Questions about mapping custom data models to FHIR, database schema conversion
 

@@ -4,7 +4,34 @@ Code generation skills for building FHIR APIs faster with FHIR Engine framework.
 
 ## Available Code Generation Skills
 
-### 1. fhir-handler-generator ⭐ Most Used
+### 1. fhir-project-setup ⭐ Start Here
+**Generates:** Complete FHIR Engine Web API project with configuration
+
+**Use when:**
+- Starting a new FHIR API project
+- Need to scaffold initial project structure
+- Setting up with specific database (PostgreSQL, SQL Server, Cosmos DB)
+- Configuring FHIR version (R4, R4B, R5)
+- Need .NET Aspire orchestration setup
+
+**Examples:**
+- "Create a new FHIR project with PostgreSQL data store"
+- "Setup a FHIR Web API with R4B version"
+- "I want to create a FHIR R5 project for testing"
+- "Initialize a FHIR Engine project with custom data store and SQS logging"
+
+**Triggers:** Questions about creating new projects, setting up FHIR APIs, project scaffolding
+
+**Outputs:**
+- Complete project structure with .csproj files
+- Solution file with all projects added
+- Git repository with initial commit
+- appsettings.json and fhirengine.json templates
+- Ready-to-build FHIR API
+
+---
+
+### 2. fhir-handler-generator ⭐ Most Used
 **Generates:** FHIR Engine handlers (CRUD, custom operations, workflows)
 
 **Use when:**
@@ -22,7 +49,7 @@ Code generation skills for building FHIR APIs faster with FHIR Engine framework.
 
 ---
 
-### 2. fhir-custom-resource ⭐ Second Most Used
+### 3. fhir-custom-resource ⭐ Second Most Used
 **Generates:** Custom FHIR resources using code-first POCO approach
 
 **Use when:**
@@ -40,7 +67,7 @@ Code generation skills for building FHIR APIs faster with FHIR Engine framework.
 
 ---
 
-### 3. fhir-custom-datastore ⭐
+### 4. fhir-custom-datastore ⭐
 **Generates:** Custom data stores with relational models
 
 **Use when:**
@@ -58,7 +85,7 @@ Code generation skills for building FHIR APIs faster with FHIR Engine framework.
 
 ---
 
-### 4. fhir-structuredefinition ⭐
+### 5. fhir-structuredefinition ⭐
 **Generates:** FHIR StructureDefinition conformance resources
 
 **Use when:**
@@ -76,7 +103,7 @@ Code generation skills for building FHIR APIs faster with FHIR Engine framework.
 
 ---
 
-### 5. fhir-data-mapping (Task) ⭐
+### 6. fhir-data-mapping (Task) ⭐
 **Provides:** Data mapping analysis between custom models and FHIR
 
 **Use when:**
@@ -99,6 +126,9 @@ Code generation skills for building FHIR APIs faster with FHIR Engine framework.
 **Question: What should I create?**
 
 ```
+Starting a new FHIR project?
+  → Use fhir-project-setup (First step!)
+
 Need to handle FHIR operations?
   → Use fhir-handler-generator
 
@@ -121,14 +151,35 @@ Need StructureDefinition/Profile/Extension?
 
 ```mermaid
 graph TD
-    A[Start New Feature] --> B{Need Custom Resource?}
-    B -->|Yes| C[fhir-custom-resource]
-    B -->|No| D[fhir-handler-generator]
-    C --> E[Build Project]
-    E --> D
-    D --> F[Update Configuration]
-    F --> G[Test with HTTP Requests]
+    A[Start] --> B[fhir-project-setup]
+    B --> C{Need Custom Resource?}
+    C -->|Yes| D[fhir-custom-resource]
+    C -->|No| E[fhir-handler-generator]
+    D --> F[Build Project]
+    F --> E
+    E --> G[Update Configuration]
+    G --> H[Test with HTTP Requests]
 ```
+
+**Example: Starting a New FHIR Project**
+
+1. **Setup Project**
+   ```
+   "Create a new FHIR project with PostgreSQL document store and R5"
+   ```
+   → Uses `fhir-project-setup` skill
+
+2. **Build and Verify**
+   ```bash
+   cd MyFhirApi.R5.DocumentPg
+   dotnet build
+   dotnet run
+   ```
+
+3. **Create Handlers** (next step)
+   → Continue with handler generation
+
+---
 
 **Example: Building a Care Program Feature**
 
@@ -158,6 +209,34 @@ graph TD
    → Uses `fhir-handler-generator` skill
 
 ## How Skills Work Together
+
+### Scenario 0: Starting from Scratch
+
+**Goal:** Create a new FHIR API project and implement Patient operations
+
+```
+1. Ask: "Create a new FHIR project with PostgreSQL data store"
+   → fhir-project-setup creates complete project structure
+
+2. Navigate to project and build:
+   cd MyFhirApi.R5.DocumentPg
+   dotnet build
+   dotnet run
+
+3. Ask: "Create CRUD handlers for Patient resource"
+   → fhir-handler-generator creates handlers
+
+4. Ask: "Add NRIC validation before creating patients"
+   → fhir-handler-generator creates PreInteraction validation handler
+
+5. Test the API:
+   - Visit http://localhost:5000/metadata
+   - Use generated .http files to test
+```
+
+**Result:** Complete FHIR API from zero to running in minutes
+
+---
 
 ### Scenario 1: Standard FHIR Resource
 
