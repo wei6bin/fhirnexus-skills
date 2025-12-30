@@ -14,7 +14,7 @@ cd /path/to/skills-package
 git init
 git add .
 git commit -m "Initial release: FHIR Engine Claude Skills v1.0.0"
-git remote add origin https://github.com/ihis/fhir-engine-skills.git
+git remote add origin https://github.com/wei6bin/fhirnexus-skills.git
 git push -u origin main
 ```
 
@@ -42,7 +42,7 @@ Users can install skills using several methods:
 No permanent installation required:
 
 ```bash
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
 ```
 
 ### Method 2: Install Tool Globally
@@ -51,7 +51,7 @@ For repeated use across multiple projects:
 
 ```bash
 # Install once
-uv tool install fhir-engine-skills --from git+https://github.com/ihis/fhir-engine-skills.git
+uv tool install fhir-engine-skills --from git+https://github.com/wei6bin/fhirnexus-skills.git
 
 # Use in any project
 cd my-project
@@ -65,10 +65,10 @@ uv tool upgrade fhir-engine-skills
 
 ```bash
 # Install from specific tag
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git@v1.0.0 fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git@v1.0.0 fhir-skills install
 
 # Or with permanent installation
-uv tool install fhir-engine-skills --from git+https://github.com/ihis/fhir-engine-skills.git@v1.0.0
+uv tool install fhir-engine-skills --from git+https://github.com/wei6bin/fhirnexus-skills.git@v1.0.0
 ```
 
 ### Method 4: Install from Branch
@@ -77,7 +77,7 @@ For testing pre-release versions:
 
 ```bash
 # Install from develop branch
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git@develop fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git@develop fhir-skills install
 ```
 
 ## Repository Structure
@@ -221,9 +221,9 @@ Update Now:
 uv tool upgrade fhir-engine-skills
 
 Or fresh install:
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
 
-Full changelog: https://github.com/ihis/fhir-engine-skills/releases/tag/v1.1.0
+Full changelog: https://github.com/wei6bin/fhirnexus-skills/releases/tag/v1.1.0
 ```
 
 ## Promoting Skills
@@ -241,7 +241,7 @@ AI-powered assistance for FHIR Engine development:
 
 **Quick Install:**
 ```bash
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
 ```
 
 **Features:**
@@ -249,7 +249,7 @@ uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills instal
 - Fix configuration errors
 - Map legacy data to FHIR
 
-Learn more: https://github.com/ihis/fhir-engine-skills
+Learn more: https://github.com/wei6bin/fhirnexus-skills
 ```
 
 ### 2. NuGet Package README
@@ -260,7 +260,7 @@ Include in FHIR Engine NuGet package description:
 ## Accelerate Development with Claude Skills
 
 Install AI-powered development assistance:
-`uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install`
+`uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install`
 
 Skills help you troubleshoot, generate code, and follow best practices.
 ```
@@ -278,7 +278,7 @@ cd MyFhirService
 echo "Install Claude Code skills for AI assistance? [y/N]"
 read -r response
 if [[ "$response" =~ ^[Yy]$ ]]; then
-    uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+    uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
 fi
 ```
 
@@ -442,7 +442,7 @@ uv tool uninstall fhir-engine-skills
 rm -rf ~/.cache/uv/
 
 # Reinstall
-uv tool install fhir-engine-skills --from git+https://github.com/ihis/fhir-engine-skills.git
+uv tool install fhir-engine-skills --from git+https://github.com/wei6bin/fhirnexus-skills.git
 ```
 
 ## Summary
@@ -458,7 +458,7 @@ uv tool install fhir-engine-skills --from git+https://github.com/ihis/fhir-engin
 
 **User Installation:**
 ```bash
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
 ```
 
 Simple, fast, and version-controlled!

@@ -46,7 +46,7 @@ fhir-engine-skills/
 This package uses **git-based distribution** via `uv tool`:
 - Skills content is embedded in `src/fhir_skills/skills/`
 - CLI tool (`fhir-skills`) copies skills to target projects' `.claude/skills/` directory
-- Users install via: `uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install`
+- Users install via: `uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install`
 - No PyPI publication required - distributed directly from GitHub
 
 ### 2. CLI Tool Architecture
@@ -124,10 +124,10 @@ uvx --from . fhir-skills install --path /tmp/test
 
 ```bash
 # Test installation from GitHub (after pushing)
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install --path /tmp/test
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install --path /tmp/test
 
 # Test specific version
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git@v1.0.0 fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git@v1.0.0 fhir-skills install
 ```
 
 ## Important Technical Details

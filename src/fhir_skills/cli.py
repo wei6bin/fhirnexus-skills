@@ -168,7 +168,7 @@ def show_info() -> int:
     print("  fhir-skills update      Update existing skills")
     print("  fhir-skills info        Show this information")
     print()
-    print("Documentation: https://github.com/ihis/fhir-engine-skills")
+    print("Documentation: https://github.com/wei6bin/fhirnexus-skills")
 
     return 0
 

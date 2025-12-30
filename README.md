@@ -27,7 +27,7 @@ Using `uvx` (no permanent installation):
 cd my-fhir-project
 
 # Install skills
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
 ```
 
 ### Persistent Tool Installation
@@ -36,7 +36,7 @@ Install the tool globally for reuse:
 
 ```bash
 # Install once
-uv tool install fhir-engine-skills --from git+https://github.com/ihis/fhir-engine-skills.git
+uv tool install fhir-engine-skills --from git+https://github.com/wei6bin/fhirnexus-skills.git
 
 # Use in any project
 cd my-fhir-project
@@ -49,7 +49,7 @@ If you don't have `uv`, download and extract manually:
 
 ```bash
 # Clone the repository
-git clone https://github.com/ihis/fhir-engine-skills.git temp-skills
+git clone https://github.com/wei6bin/fhirnexus-skills.git temp-skills
 
 # Copy skills to your project
 cp -r temp-skills/src/fhir_skills/skills .claude/
@@ -211,7 +211,7 @@ Update to latest version:
 
 ```bash
 # Using uvx
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills update
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills update
 
 # Using installed tool
 fhir-skills update
@@ -259,8 +259,8 @@ fhir-skills update
 
 We welcome contributions! To suggest improvements:
 
-1. **Report Issues**: [GitHub Issues](https://github.com/ihis/fhir-engine-skills/issues)
-2. **Suggest Skills**: [Discussions](https://github.com/ihis/fhir-engine-skills/discussions)
+1. **Report Issues**: [GitHub Issues](https://github.com/wei6bin/fhirnexus-skills/issues)
+2. **Suggest Skills**: [Discussions](https://github.com/wei6bin/fhirnexus-skills/discussions)
 3. **Share Feedback**: feedback@ihis.com
 
 ## Development
@@ -269,7 +269,7 @@ To work on skills locally:
 
 ```bash
 # Clone repository
-git clone https://github.com/ihis/fhir-engine-skills.git
+git clone https://github.com/wei6bin/fhirnexus-skills.git
 cd fhir-engine-skills
 
 # Install in development mode
@@ -303,9 +303,9 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- 📖 [Documentation](https://github.com/ihis/fhir-engine-skills/wiki)
-- 💬 [Discussions](https://github.com/ihis/fhir-engine-skills/discussions)
-- 🐛 [Issue Tracker](https://github.com/ihis/fhir-engine-skills/issues)
+- 📖 [Documentation](https://github.com/wei6bin/fhirnexus-skills/wiki)
+- 💬 [Discussions](https://github.com/wei6bin/fhirnexus-skills/discussions)
+- 🐛 [Issue Tracker](https://github.com/wei6bin/fhirnexus-skills/issues)
 - 📧 Email: support@ihis.com
 
 ## Related Resources
@@ -317,4 +317,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Quick Start**: `uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install`
+**Quick Start**: `uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install`

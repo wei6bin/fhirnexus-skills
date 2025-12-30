@@ -346,7 +346,7 @@ After tests pass:
 
 3. **Test installation from GitHub**:
    ```bash
-   uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+   uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
    ```
 
 4. **Use in Claude Code**:

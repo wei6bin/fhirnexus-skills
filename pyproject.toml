@@ -31,10 +31,10 @@ classifiers = [
 fhir-skills = "fhir_skills.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/ihis/fhir-engine-skills"
-Documentation = "https://github.com/ihis/fhir-engine-skills#readme"
-Repository = "https://github.com/ihis/fhir-engine-skills"
-"Issue Tracker" = "https://github.com/ihis/fhir-engine-skills/issues"
+Homepage = "https://github.com/wei6bin/fhirnexus-skills"
+Documentation = "https://github.com/wei6bin/fhirnexus-skills#readme"
+Repository = "https://github.com/wei6bin/fhirnexus-skills"
+"Issue Tracker" = "https://github.com/wei6bin/fhirnexus-skills/issues"
 
 [project.optional-dependencies]
 test = [

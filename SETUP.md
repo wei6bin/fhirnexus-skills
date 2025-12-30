@@ -35,7 +35,7 @@ git add .
 git commit -m "Initial release: FHIR Engine Claude Skills v1.0.0"
 
 # Add remote (replace with your org/repo)
-git remote add origin https://github.com/ihis/fhir-engine-skills.git
+git remote add origin https://github.com/wei6bin/fhirnexus-skills.git
 
 # Push to GitHub
 git branch -M main
@@ -202,13 +202,13 @@ After pushing to GitHub, test that users can install:
 
 ```bash
 # Test one-time usage
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install --path /tmp/test
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install --path /tmp/test
 
 # Verify
 ls /tmp/test/.claude/skills/
 
 # Test permanent installation
-uv tool install fhir-engine-skills --from git+https://github.com/ihis/fhir-engine-skills.git
+uv tool install fhir-engine-skills --from git+https://github.com/wei6bin/fhirnexus-skills.git
 
 # Use it
 fhir-skills info
@@ -380,13 +380,13 @@ For setup issues:
 git init
 git add .
 git commit -m "Initial release v1.0.0"
-git remote add origin https://github.com/ihis/fhir-engine-skills.git
+git remote add origin https://github.com/wei6bin/fhirnexus-skills.git
 git push -u origin main
 git tag v1.0.0
 git push --tags
 
 # 2. Test installation
-uvx --from git+https://github.com/ihis/fhir-engine-skills.git fhir-skills install
+uvx --from git+https://github.com/wei6bin/fhirnexus-skills.git fhir-skills install
 
 # 3. Create GitHub release
 # (via web interface)
