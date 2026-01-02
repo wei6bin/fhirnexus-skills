@@ -126,8 +126,8 @@ Skills are located in: `src/fhir_skills/skills/`
 nano src/fhir_skills/skills/fhir-config-troubleshooting/SKILL.md
 
 # Add new skill
-mkdir -p src/fhir_skills/skills/codegen/new-skill
-nano src/fhir_skills/skills/codegen/new-skill/SKILL.md
+mkdir -p src/fhir_skills/skills/new-skill
+nano src/fhir_skills/skills/new-skill/SKILL.md
 ```
 
 ### 2. Update Version

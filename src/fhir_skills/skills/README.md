@@ -229,8 +229,6 @@ Skills are specialized knowledge modules that Claude automatically uses when you
 - Sample FHIR instances
 - Implementation considerations
 
-**See:** [Code Generation Skills Guide](codegen/README.md) for detailed usage
-
 ## How to Use Skills
 
 Skills work automatically - just ask Claude your question naturally:

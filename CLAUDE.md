@@ -23,15 +23,14 @@ fhir-engine-skills/
 │   └── skills/                # Embedded Claude skills content
 │       ├── README.md          # Skills documentation
 │       ├── GETTING_STARTED.md # User onboarding
-│       ├── codegen/           # Code generation skills
-│       │   ├── fhir-handler-generator/
-│       │   ├── fhir-custom-resource/
-│       │   ├── fhir-custom-datastore/
-│       │   └── fhir-structuredefinition/
-│       ├── tasks/
-│       │   └── fhir-data-mapping/
+│       ├── fhir-handler-generator/
+│       ├── fhir-custom-resource/
+│       ├── fhir-custom-datastore/
+│       ├── fhir-structuredefinition/
+│       ├── fhir-data-mapping/
 │       ├── fhir-config-troubleshooting/
 │       ├── fhir-errors-debugger/
+│       ├── fhir-project-setup/
 │       └── handler-patterns/
 ├── pyproject.toml             # Package configuration
 ├── README.md                  # User-facing documentation
@@ -67,9 +66,9 @@ Each skill directory contains:
 - `examples/` - Reference implementations
 - Additional reference files (e.g., `decision-matrix.md`, `mapping-patterns.md`)
 
-Skills are categorized:
+Skills are logically categorized (all stored at root level):
 - **Troubleshooting & Help** (3 skills): Config troubleshooting, error debugging, handler patterns
-- **Code Generation** (4 skills): Handler generator, custom resources, custom datastores, StructureDefinitions
+- **Code Generation** (5 skills): Project setup, handler generator, custom resources, custom datastores, StructureDefinitions
 - **Analysis & Mapping** (1 skill): Data mapping analysis
 
 ### 4. Version Management

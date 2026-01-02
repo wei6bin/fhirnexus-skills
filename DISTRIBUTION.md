@@ -96,14 +96,13 @@ fhir-engine-skills/              # GitHub repository
 │       └── skills/             # Embedded skills content
 │           ├── README.md
 │           ├── GETTING_STARTED.md
-│           ├── codegen/
-│           │   ├── fhir-handler-generator/
-│           │   ├── fhir-custom-resource/
-│           │   ├── fhir-custom-datastore/
-│           │   └── fhir-structuredefinition/
-│           ├── tasks/
-│           │   └── fhir-data-mapping/
+│           ├── fhir-handler-generator/
+│           ├── fhir-custom-resource/
+│           ├── fhir-custom-datastore/
+│           ├── fhir-structuredefinition/
+│           ├── fhir-data-mapping/
 │           ├── fhir-config-troubleshooting/
+│           ├── fhir-project-setup/
 │           ├── handler-patterns/
 │           └── fhir-errors-debugger/
 │

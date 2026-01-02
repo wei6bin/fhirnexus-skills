@@ -182,12 +182,15 @@ GETTING_STARTED.md
 LICENSE
 README.md
 VERSION
-codegen/
 fhir-config-troubleshooting/
+fhir-custom-datastore/
+fhir-custom-resource/
+fhir-data-mapping/
 fhir-errors-debugger/
+fhir-handler-generator/
 fhir-project-setup/
+fhir-structuredefinition/
 handler-patterns/
-tasks/
 ```
 
 ### Step 2: Verify Skill Content
